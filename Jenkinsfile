@@ -14,11 +14,6 @@ pipeline {
             stage('Deploy') {
                 steps {
                     bat 'echo Deploy job completed successfully'
-                    mail body: 'Project build completed sucessfully',
-                            from: 'sagar.chavan.ext@siemens.com',
-                            replyTo:'sagar.chavan.ext@siemens.com',
-                            subject: 'Deploy completed',
-                            to: 'sagar.chavan.ext@siemens.com'
                 }
             }
         }
