@@ -22,7 +22,7 @@ pipeline {
         always{
             bat 'echo This will aways run'
         }
-        sucsess{
+        success{
             bat 'echo This will run only when job is sucessful'
         }
         failure{
