@@ -1,7 +1,5 @@
 pipeline {
     agent any 
-    currentBuild.result= "SUCCESS"
-    try{
         stages {
             stage('Build') { 
                 steps { 
@@ -35,9 +33,4 @@ pipeline {
                 bat 'echo This will run only when job is failed'
             }
         }
-    }
-    catch(err){
-        currentBuild.result= "FAILURE"
-        throw err
-    }
 }
