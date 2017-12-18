@@ -19,3 +19,14 @@ pipeline {
         }
     }
 }
+post{
+    always{
+        bat 'echo This will aways run'
+    }
+    sucsess{
+        bat 'echo This will run only when job is sucessful'
+    }
+    failure{
+        bat 'echo This will run only when job is failed'
+    }
+}
