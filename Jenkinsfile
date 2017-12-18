@@ -4,17 +4,17 @@ pipeline {
     stages {
         stage('Build') { 
             steps { 
-                echo Build Job completed sucessfully 
+                bat 'echo Build Job completed sucessfully'
             }
         }
         stage('Test'){
             steps {
-                echo Test job completed sucessfully  
+                bat 'echo Test job completed sucessfully'  
             }
         }
         stage('Deploy') {
             steps {
-                echo Deploy job completed successfully
+                bat 'echo Deploy job completed successfully'
             }
         }
     }
